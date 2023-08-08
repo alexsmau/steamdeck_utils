@@ -29,7 +29,11 @@ try:
         while True:
             axisL = "axis left x={0:.3f} y={1:.3f}".format(
                 controller.axis_l.x, controller.axis_l.y)
+            triggerR = "trigger right value={0:.3f}".format(
+                controller.trigger_r.value)
             print(axisL)
+            print(triggerR)
+            print(" ")
             time.sleep(1)
 except KeyboardInterrupt:
     pass
