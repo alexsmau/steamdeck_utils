@@ -13,7 +13,7 @@ def on_button_released(button):
 def on_axis_moved(axis):
     print ('Axis {0} has moved to x:{1} y:{2}'.format(axis.name, axis.x, axis.y))
 
-with Xbox360Controller(0, axis_threshold=0.2) as controller:
+with Xbox360Controller(0, axis_threshold=0.1) as controller:
 
     controller.button_a.when_pressed = on_button_pressed
     controller.button_a.when_released = on_button_released
